@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Card</title>
+    <link rel="stylesheet"  href="styles.css">
+</head>
+<body>
+    <div  class="container">
+       <section>
+             <div class="home">
+                <h3>HOME</h3>
+            </div>
+            <div class="guest">
+                <h3>GUEST</h3>
+            </div>
+       </section> 
+        <div class="score-section">
+           <div class="score">
+             <span id="home-el"></span>
+           </div>
+          <div class="score">
+            <span id="guest-el"></span>
+           </div>
+        </div>
+        <section>
+            <div class="btns">
+               <button id="addone" onclick="addOneHome()">+1</button>
+               <button id="addtwo"  onclick="addTwoHome()">+2</button>
+               <button id ="addthree" onclick="addThreeHome()">+3</button>
+               
+            </div>
+            <div class="btns">
+               <button id ="addone" onclick="addOneGuest ()">+1</button>
+               <button id = "addtwo" onclick="addTwoGuest()">+2</button>
+                <button id = "addthree" onclick="addThreeGuest()">+3</button>
+            </div>
+        </section>
+        <footer>
+            <button id="subOne" onclick="subHome()">-1</button>
+            <button onclick="newgame()" id="new-game">NEW GAME</button>
+            <button id="subOne" onclick="subGuest()">-1</button>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
